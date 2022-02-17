@@ -4,9 +4,9 @@ import { v1 as uuid } from 'uuid';
 
 @Injectable()
 export class BoardsService {
-  private boards = [];
+  private boards: Board[] = [];
 
-  getAllBoards() {
+  getAllBoards(): Board[] {
     return this.boards;
   }
 
